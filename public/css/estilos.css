@@ -17,6 +17,8 @@ img{
 
 p{
   color: white;
+  margin-left: 10%;
+  margin-right: 10%
 }
 
 h1{
@@ -79,38 +81,64 @@ header{
 /*Main*/
 
 article{
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondo.png);
   height: 100%;
   width: 100%;
+
+}
+
+.article__products{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  padding: 5%;
+  }
+
+.div__products{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+}
+
+
+.div__product{
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  padding: 20px;
+}
+
+
+.article__contact{
+  padding: 10%;
+
+}
+
+.contacto{
+  text-decoration: none;
+  color: white;
 }
 
 .article__us{
-  padding: 20%;
+  padding: 10%;
 }
 
-.article__contact{
-  padding: 20%;
+.article__you{
+  padding: 10%;
 }
 
 .article__tips{
-  padding: 20%;
+  padding: 10%;
 }
 
-.article__products{display: flex;
-flex-direction: column;
-justify-content: space-between;
-flex-wrap: wrap;
-height: 100%;
-width: 100%;
+#back{
+  color: white;
+  font-size: 50px;
 }
-
-.div__product{
-  justify-content: space-between;
-  padding: 20px;
-  height: 20%;
-  width: 20%;
-}
-
 
 /*Footder*/
 
@@ -128,4 +156,15 @@ footer{
   height: 100%;
   width: 7%;
   padding: 1%;
+  margin-left: 4%;
+}
+
+#footer__datos{
+  margin-left: 5%;
+  margin: 5%;
+  text-align: right;
+}
+
+#back{
+  color: white
 }

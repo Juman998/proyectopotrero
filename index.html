@@ -3,81 +3,97 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="public/css/estilos.css">
-    <title>home</title>
+    <title>Edúmates</title>
+    <script src="https://kit.fontawesome.com/602b371618.js"></script>
   </head>
   <body>
 
     <header>
       <h1 class="header__name">Edú mates</h1>
-      <nav class="header__navigation">
+      <nav class="header__navigation" id="home">
         <div class="nav__button">
-           <a class="nav__link" href="PRODUCTOS">PRODUCTOS</a>
+           <a class="nav__link" href="#products">PRODUCTOS</a>
         </div>
         <div class="nav__button">
-          <a class="nav__link" href="CONTACTO">CONTACTO</a>
+          <a class="nav__link" href="#contact">CONTACTO</a>
         </div>
         <div class="nav__button">
-          <a class="nav__link" href="NOSOTROS">NOSOTROS</a>
+          <a class="nav__link" href="#us">NOSOTROS</a>
         </div>
         <div class="nav__button">
           <a class="nav__link" href="USTEDES">USTEDES</a>
         </div>
         <div class="nav__button">
-          <a class="nav__link" href="TIPS">TIPS</a>
+          <a class="nav__link" href="#tips">TIPS</a>
         </div>
       </nav>
     </header>
 
     <main>
       <article class="main__banner">
-        <img src="public/img/banner1.png" alt="banner">
+        <img src="public/img/banner.png" alt="banner">
       </article>
 
-      <article class="article__products">
+      <article class="article__products" id="products">
         <h2>PRODUCTOS</h2>
-        <div class="div__product">
-          <a href="#">
-            <img src="public/img/productos/mate4.jpg" alt="Mates">
-          </a>
+        <div class="div__products">
+          <div class="div__product">
+            <a href="#">
+              <img src="public/img/productos/mate4.jpg" alt="Mates">
+            </a>
+          </div>
+          <div class="div__product">
+            <a href="#">
+              <img src="public/img/productos/bombillas.jpg" alt="Mates">
+            </a>
+          </div>
+          <div class="div__product">
+            <a href="#">
+              <img src="public/img/productos/accesorios.jpg" alt="Mates">
+            </a>
+          </div>
+          <div class="div__product">
+            <a href="#">
+              <img src="public/img/productos/yerba1.jpg" alt="Mates">
+            </a>
+          </div>
         </div>
-        <div class="div__product">
-          <a href="#">
-            <img src="public/img/productos/bombillas.jpg" alt="Mates">
-          </a>
-        </div>
-        <div class="div__product">
-          <a href="#">
-            <img src="public/img/productos/accesorios.jpg" alt="Mates">
-          </a>
-        </div>
-        <div class="div__product">
-          <a href="#">
-            <img src="public/img/productos/yerba1.jpg" alt="Mates">
-          </a>
-        </div>
+        <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
       </article>
 
-      <article class="article__contact">
+      <article class="article__contact" id="contact">
         <h2>CONTACTO</h2>
         <p>Nuestro showroom esta en rosario.<br> Coordinamos horarios con los clientes para que vengan a ver los productos.<br>
         Tambien hacemos envios a todo el pais.<br>
         Anda a nuestro redes por consultas y compras.
-        </p>
-        <a href="https://www.instagram.com/edu.mates/">@edumates
-        </a><br>
-        <a href="https://mail.google.com/mail/u/0/#sent?compose=new">edumates@gmail.com</a><br>
-        <a href="#">3413073401</a>
-        </div>
+      </p><br>
+
+        <a class="contacto"href="https://www.instagram.com/edu.mates/"><i class="fa-brands fa-instagram"></i>  edumates</a><br>
+        <a class="contacto"href="https://mail.google.com/mail/u/0/#sent?compose=new"><i class="fa-solid fa-envelope"></i>  edumates@gmail.com</a><br>
+        <a class="contacto"href="#"><i class="fa-solid fa-phone"></i>  3413073401</a><br><br>
+        <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
 
       </article>
 
-      <article class="article__us">
+      <article class="article__us" id="us">
         <h2>NOSOTROS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+        <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
 
       </article>
 
-      <article class="article__tips">
+    </article>
+
+    <article class="article__you" id="you">
+      <h2>USTEDES</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+
+      <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
+
+    </article>
+
+
+      <article class="article__tips" id="tips">
         <h2>TIPS</h2>
         <h3>Preparar tu Edumates?</h3>
         <p>1 - ajsjadjnd <br>
@@ -95,7 +111,9 @@
         <p>1 - ajsjadjnd <br>
            2- jsjsfbsfjdb <br>
            3 - sdjjfnsknjf <br>
-           4 - kjdksjdnksjnd</p>
+           4 - kjdksjdnksjnd</p><br><br>
+
+           <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
 
 
       </article>
@@ -107,12 +125,14 @@
         <img src="public/img/logo.png" alt="logo">
       </figure>
 
-      <p id="footer__datos">
-        3413073401 <br>
-        edumates@gmail.com <br>
-        edumates
+      <div class="footer__datos">
+        <a class="contacto"href="https://www.instagram.com/edu.mates/"><i class="fa-brands fa-instagram"></i>  edumates</a><br>
+        <a class="contacto"href="https://mail.google.com/mail/u/0/#sent?compose=new"><i class="fa-solid fa-envelope"></i>  edumates@gmail.com</a><br>
+        <a class="contacto"href="#"><i class="fa-solid fa-phone"></i>  3413073401</a>
 
-      </p>
+      </div>
+
+
 
 
 
