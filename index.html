@@ -2,146 +2,154 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title>edúmates</title>
     <link rel="stylesheet" href="public/css/estilos.css">
-    <title>Edúmates</title>
-    <script src="https://kit.fontawesome.com/602b371618.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-
     <header>
-      <h1 class="header__name">Edú mates</h1>
-      <nav class="header__navigation" id="home">
-        <div class="nav__button">
-           <a class="nav__link" href="#products">PRODUCTOS</a>
-        </div>
-        <div class="nav__button">
-          <a class="nav__link" href="#contact">CONTACTO</a>
-        </div>
-        <div class="nav__button">
-          <a class="nav__link" href="#us">NOSOTROS</a>
-        </div>
-        <div class="nav__button">
-          <a class="nav__link" href="USTEDES">USTEDES</a>
-        </div>
-        <div class="nav__button">
-          <a class="nav__link" href="#tips">TIPS</a>
-        </div>
+      <div class="header_logo">
+        <img src="public/img/logo.png" alt="logo">
+      </div>
+      <button class="header_icono" type="button" name="button">
+        <i class="icono fa-solid fa-bars"></i>
+      </button>
+      <nav class="header_nav">
+        <ul>
+          <li><a class="nav_link" href="#products">INICIO</a></li>
+          <li><a class="nav_link" href="#">PRODUCTOS</a></li>
+          <li><a class="nav_link" href="#">NOSOTROS</a></li>
+          <li><a class="nav_link" href="#">TIPS</a></li>
+          <li><a class="nav_link" href="#">USTEDES</a></li>
+          <li><a class="nav_link" href="#">CONTACTO</a></li>
+        </ul>
       </nav>
     </header>
+    <section class="banner"></section>
 
     <main>
-      <article class="main__banner">
-        <img src="public/img/banner.png" alt="banner">
-      </article>
-
-      <article class="article__products" id="products">
-        <h2>PRODUCTOS</h2>
-        <div class="div__products">
-          <div class="div__product">
-            <a href="#">
-              <img src="public/img/productos/mate4.jpg" alt="Mates">
-            </a>
+      <section class="sec_us" id="us">
+        <h1>NOSOTROS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section class="sec_products" id="products">
+        <h1>PRODUCTOS</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="#"> <img src="public/img/productos/imperial.jpg" alt="mates"> </a>
+            </div>
+            <div class="col">
+              <a href="#"> <img src="public/img/productos/bombillas.jpg" alt="bombillas"> </a>
+            </div>
           </div>
-          <div class="div__product">
-            <a href="#">
-              <img src="public/img/productos/bombillas.jpg" alt="Mates">
-            </a>
-          </div>
-          <div class="div__product">
-            <a href="#">
-              <img src="public/img/productos/accesorios.jpg" alt="Mates">
-            </a>
-          </div>
-          <div class="div__product">
-            <a href="#">
-              <img src="public/img/productos/yerba1.jpg" alt="Mates">
-            </a>
+          <div class="row">
+            <div class="col">
+              <a href="#"> <img src="public/img/productos/termos.jpg" alt="termos"> </a>
+            </div>
+            <div class="col">
+              <a href="#"> <img src="public/img/productos/canarias.jpg" alt="yerbas"> </a>
+            </div>
+            <div class="col">
+              <a href="#"> <img src="public/img/productos/yerbera.jpg" alt="accesorios"> </a>
+            </div>
           </div>
         </div>
-        <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
-      </article>
-
-      <article class="article__contact" id="contact">
-        <h2>CONTACTO</h2>
+      </section>
+      <section class="sec_tips" id="tips">
+        <h1>TIPS</h1>
+        <h2>¿Como curar tu edumates?</h2>
+        <ol>
+          <li>LLena tu edumates con agua hirviendo y deja que burbujee</li>
+          <li>Vacia el mate</li>
+          <li>repeti el procedimiento un par de veces</li>
+          <li>Llena el mate con yerba usada, tratando de que tape toda la parte de calabaza</li>
+          <li>Deja reposar 24hs</li>
+          <li>Vacia el mate y disfruta unos ricos amargos</li>
+        </ol>
+        <h2>¿Como cuidar tu edumates?</h2>
+        <ol>
+          <li>No dejes el mate usado por mas de 24hs ya que puede generar hongos o bacterias que pueda afecten al olor y sabor del mate</li>
+          <li>Luego de usarlo lava solo el interior con un poco de agua para que no quede yerba dentro que se pueda descomponer</li>
+          <li>Evitar que se moje el cuero ya que esto produce que el cuero se resquebraje o se deforme</li>
+          <li>Evita golpearlo, para no dañar la virola o la calabaza</li>
+        </ol>
+        <h2>¿Como preparar tu edumates?</h2>
+        <ol>
+          <li>Calenta el agua entre 70° u 80°</li>
+          <li>Despolvilla la yerba con nuestros despolvilladores</li>
+          <li>Pone la yerba en el mate, tapam toda la boca con la palma de la mano, ponelo boca abajpo, agita levemente y giras a 45° para formar una montañita de yerba en el costado</li>
+          <li>Hecha un poquito de agua en la parte baja de la montañita</li>
+          <li>Pone la bombilla sobre lo mojado mientras tenes tapada la boca de la misma</li>
+          <li>Pone agua caliente en donde pusiste la bombilla y segui cebando en ese lugar</li>
+          <li>Disfruta esos mates</li>
+        </ol>
+      </section>
+      <section class="sec_you" id="you">
+        <h1>USTEDES</h1>
+        <div class="container_carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="public/img/ustedes/1.jpg" class="d-block w-100" alt="foto1">
+              </div>
+              <div class="carousel-item">
+                <img src="public/img/ustedes/6.jpg" class="d-block w-100" alt="foto6">
+              </div>
+              <div class="carousel-item">
+                <img src="public/img/ustedes/2.jpg" class="d-block w-100" alt="foto2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+      <section class="sec_contact" id="contact">
+        <h1>CONTACTO</h1>
         <p>Nuestro showroom esta en rosario.<br> Coordinamos horarios con los clientes para que vengan a ver los productos.<br>
         Tambien hacemos envios a todo el pais.<br>
-        Anda a nuestro redes por consultas y compras.
-      </p><br>
+        Anda a nuestras redes por consultas y compras.
+        </p>
+        <div class="contact_container">
+          <div class="contact_item">
+            <a href="https://www.instagram.com/edu.mates/"><i class="contact_image fa-brands fa-instagram"></i></a>
+            <h3>edu.mates</h3>
+          </div>
+          <div class="contact_item">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="contact_image fa-regular fa-envelope"></i></a>
+            <h3>edumates@gmail.com</h3>
+          </div>
+          <div class="contact_item">
+            <a href="https://wa.me/543413073401"><i class="contact_image fa-brands fa-whatsapp"></i></a>
+            <h3>(341)3073401</h3>
+          </div>
 
-        <a class="contacto"href="https://www.instagram.com/edu.mates/"><i class="fa-brands fa-instagram"></i>  edumates</a><br>
-        <a class="contacto"href="https://mail.google.com/mail/u/0/#sent?compose=new"><i class="fa-solid fa-envelope"></i>  edumates@gmail.com</a><br>
-        <a class="contacto"href="#"><i class="fa-solid fa-phone"></i>  3413073401</a><br><br>
-        <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
+        </div>
+      </section>
 
-      </article>
+      <footer>
+        <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini">
+        <h4>Todos los derechos reservados</h4>
+        <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini">
 
-      <article class="article__us" id="us">
-        <h2>NOSOTROS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
-        <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
+      </footer>
 
-      </article>
-
-    </article>
-
-    <article class="article__you" id="you">
-      <h2>USTEDES</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
-
-      <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
-
-    </article>
-
-
-      <article class="article__tips" id="tips">
-        <h2>TIPS</h2>
-        <h3>Preparar tu Edumates?</h3>
-        <p>1 - ajsjadjnd <br>
-           2- jsjsfbsfjdb <br>
-           3 - sdjjfnsknjf <br>
-           4 - kjdksjdnksjnd</p>
-        <br>
-        <h3>Cuidar tu Edumates?</h3>
-        <p>1 - ajsjadjnd <br>
-           2- jsjsfbsfjdb <br>
-           3 - sdjjfnsknjf <br>
-           4 - kjdksjdnksjnd</p>
-        <br>
-        <h3>Curar tu Edumates?</h3>
-        <p>1 - ajsjadjnd <br>
-           2- jsjsfbsfjdb <br>
-           3 - sdjjfnsknjf <br>
-           4 - kjdksjdnksjnd</p><br><br>
-
-           <a id="back" href="#home"><i class="fa-solid fa-house"></i></a>
-
-
-      </article>
-
-    </main>
-
-    <footer>
-      <figure class="footer__logo">
-        <img src="public/img/logo.png" alt="logo">
-      </figure>
-
-      <div class="footer__datos">
-        <a class="contacto"href="https://www.instagram.com/edu.mates/"><i class="fa-brands fa-instagram"></i>  edumates</a><br>
-        <a class="contacto"href="https://mail.google.com/mail/u/0/#sent?compose=new"><i class="fa-solid fa-envelope"></i>  edumates@gmail.com</a><br>
-        <a class="contacto"href="#"><i class="fa-solid fa-phone"></i>  3413073401</a>
-
-      </div>
-
-
-
-
-
-
-
-    </footer>
-
-
-
+    <script src="public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
   </body>
 </html>

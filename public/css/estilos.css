@@ -1,170 +1,197 @@
-/*Generales*/
+
+
+body{
+  margin: 0;
+}
+
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  text-align: center;
-  font-family: monospace;
-
 }
+
 
 img{
   height: 100%;
   width: 100%;
-
 }
 
-p{
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%
+/*header*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  opacity: 0.9;
+}
+
+.header_logo{
+  height: 100%;
+  width: 20%;
+  padding: 10px;
+}
+
+.header_icono{
+  height: 100%;
+  width: 20%;
+  border: 0;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.icono{
+  font-size: 3rem;
+}
+
+.header_nav{
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: none;
+}
+
+.header_nav--active{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.header_nav--disabled{
+  display: none;
+}
+
+.header_nav ul{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.header_nav li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+
+.nav_link{
+  color: #2E2E2E;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.banner{
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+/*main*/
+
+section{
+  background-image: url(../img/fondo.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  margin-bottom: 40px;
 }
 
 h1{
   color: white;
+  padding: 60px;
+}
+
+p{
+  color: white;
+  font-size: 2rem;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
 }
 
 h2{
   color: white;
-  padding: 5%;
+}
+
+ol {
+  font-size: 1.5rem;
+  color: white;
+  text-align: justify;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 40px;
+}
+
+.container_carousel{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contact_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 15%;
+}
+
+.contact_item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_image{
+  font-size: 10rem;
+  color: white;
 }
 
 h3{
   color: white;
 }
 
-body{
-  margin:0;
-}
-
-/*Header*/
-
-header{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 7vh;
-  background-color: white;
-  justify-content: space-between;
-  align-items: center;
-  }
-
-
-.header__name{
-    font-size: 20px;
-    color: rgb(70, 70, 70);
-    padding: 5%;
-
-    }
-
-.header__navigation{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav__link{
-  display: inline-block;
-  width: 20%;
-  height: 100%;
-  text-decoration: none;
-  color: rgb(70, 70, 70);
-  font-size: 15px;
-  padding: 5%;
-}
-
-
-/*Main*/
-
-article{
-  background-image: url(../img/fondo.png);
-  height: 100%;
-  width: 100%;
-
-}
-
-.article__products{
-  display: flex;
-  flex-direction: column;
-  height: 50%;
-  width: 100%;
-  padding: 5%;
-  }
-
-.div__products{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  justify-content: center;
-}
-
-
-.div__product{
-  justify-content: center;
-  height: 100%;
-  width: 20%;
-  padding: 20px;
-}
-
-
-.article__contact{
-  padding: 10%;
-
-}
-
-.contacto{
-  text-decoration: none;
-  color: white;
-}
-
-.article__us{
-  padding: 10%;
-}
-
-.article__you{
-  padding: 10%;
-}
-
-.article__tips{
-  padding: 10%;
-}
-
-#back{
-  color: white;
-  font-size: 50px;
-}
-
-/*Footder*/
+/*footer*/
 
 footer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 14vh;
-    background-color: black;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+h4{
+  color: white;
 }
 
 .footer__logo{
   height: 100%;
-  width: 7%;
-  padding: 1%;
-  margin-left: 4%;
-}
-
-#footer__datos{
-  margin-left: 5%;
-  margin: 5%;
-  text-align: right;
-}
-
-#back{
-  color: white
+  width: 20%;
+  padding: 60px;
+  border-radius: 50%;
 }
