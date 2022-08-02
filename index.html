@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>edúmates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -15,9 +16,8 @@
       <button class="header_icono" type="button" name="button">
         <i class="icono fa-solid fa-bars"></i>
       </button>
-      <nav class="header_nav">
+      <nav   id="home" class="header_nav">
         <ul>
-          <li><a class="nav_link" href="#home">INICIO</a></li>
           <li><a class="nav_link" href="#us">NOSOTROS</a></li>
           <li><a class="nav_link" href="#products">PRODUCTOS</a></li>
           <li><a class="nav_link" href="#tips">TIPS</a></li>
@@ -27,10 +27,11 @@
       </nav>
     </header>
     <main>
-      <section class="banner" id="home"></section>
+      <section class="banner"></section>
       <section class="sec_us" id="us">
         <h1>NOSOTROS</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="home_link" href="#home">  <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini"></a>
       </section>
       <section class="sec_products" id="products">
         <h1>PRODUCTOS</h1>
@@ -55,10 +56,11 @@
             </div>
           </div>
         </div>
+        <a class="home_link" href="#home">  <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini"></a>
       </section>
       <section class="sec_tips" id="tips">
         <h1>TIPS</h1>
-        <h2>¿Como curar tu edumates?</h2>
+        <h3>¿Como curar tu edumates?</h3>
         <ol>
           <li>LLena tu edumates con agua hirviendo y deja que burbujee</li>
           <li>Vacia el mate</li>
@@ -67,23 +69,23 @@
           <li>Deja reposar 24hs</li>
           <li>Vacia el mate y disfruta unos ricos amargos</li>
         </ol>
-        <h2>¿Como cuidar tu edumates?</h2>
+        <h3>¿Como cuidar tu edumates?</h3>
         <ol>
           <li>No dejes el mate usado por mas de 24hs ya que puede generar hongos o bacterias que pueda afecten al olor y sabor del mate</li>
           <li>Luego de usarlo lava solo el interior con un poco de agua para que no quede yerba dentro que se pueda descomponer</li>
           <li>Evitar que se moje el cuero ya que esto produce que el cuero se resquebraje o se deforme</li>
           <li>Evita golpearlo, para no dañar la virola o la calabaza</li>
         </ol>
-        <h2>¿Como preparar tu edumates?</h2>
+        <h3>¿Como preparar tu edumates?</h3>
         <ol>
           <li>Calenta el agua entre 70° u 80°</li>
-          <li>Despolvilla la yerba con nuestros despolvilladores</li>
-          <li>Pone la yerba en el mate, tapam toda la boca con la palma de la mano, ponelo boca abajpo, agita levemente y giras a 45° para formar una montañita de yerba en el costado</li>
+          <li>Pone la yerba en el mate, tapa toda la boca con la palma de la mano, ponelo boca abajpo, agita levemente y giras a 45° para formar una montañita de yerba en el costado</li>
           <li>Hecha un poquito de agua en la parte baja de la montañita</li>
           <li>Pone la bombilla sobre lo mojado mientras tenes tapada la boca de la misma</li>
-          <li>Pone agua caliente en donde pusiste la bombilla y segui cebando en ese lugar</li>
+          <li>Ceba con agua caliente en el lugar donde pusiste la bombilla y segui cebando en ese lugar</li>
           <li>Disfruta esos mates</li>
         </ol>
+        <a class="home_link" href="#home">  <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini"></a>
       </section>
       <section class="sec_you" id="you">
         <h1>USTEDES</h1>
@@ -115,33 +117,28 @@
             </button>
           </div>
         </div>
+        <a class="home_link" href="#home">  <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini"></a>
       </section>
       <section class="sec_contact" id="contact">
         <h1>CONTACTO</h1>
-        <p>Nuestro showroom esta en rosario.<br> Coordinamos horarios con los clientes para que vengan a ver los productos.<br>
-        Tambien hacemos envios a todo el pais.<br>
-        Anda a nuestras redes por consultas y compras.
+        <p>Nuestro showroom esta en rosario. Coordinamos horarios con los clientes para que vengan a ver los productos. Tambien hacemos envios a todo el pais. Anda a nuestras redes por consultas y compras.
         </p>
         <div class="contact_container">
           <div class="contact_item">
-            <a href="https://www.instagram.com/edu.mates/"><i class="contact_image fa-brands fa-instagram"></i></a>
-            <h3>edu.mates</h3>
+            <a class="contact_link" href="https://www.instagram.com/edu.mates/"><i class="contact_image fa-brands fa-instagram"></i>edu.mates</a>
           </div>
           <div class="contact_item">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="contact_image fa-regular fa-envelope"></i></a>
-            <h3>edumates@gmail.com</h3>
+            <a class="contact_link" href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="contact_image fa-regular fa-envelope"></i>edumates@gmail.com</a>
           </div>
           <div class="contact_item">
-            <a href="https://wa.me/543413073401"><i class="contact_image fa-brands fa-whatsapp"></i></a>
-            <h3>(341)3073401</h3>
+            <a class="contact_link" href="https://wa.me/543413073401"><i class="contact_image fa-brands fa-whatsapp"></i>(341)3073401</a>
           </div>
         </div>
+        <a class="home_link" href="#home">  <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini"></a>
       </section>
     </main>
     <footer>
-      <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini">
-      <h4>Todos los derechos reservados</h4>
-      <img class="footer__logo" src="public/img/logomini.jpg" alt="logomini">
+      <h6>Todos los derechos reservados</h4>
     </footer>
 
 
