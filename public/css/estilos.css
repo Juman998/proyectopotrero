@@ -8,6 +8,10 @@ body{
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "alba";
+  src:url(../fonts/alba.ttf);
+}
 
 img{
   height: 100%;
@@ -93,6 +97,7 @@ header{
   color: #2E2E2E;
   text-decoration: none;
   font-size: 2rem;
+  font-family: "alba";
 }
 
 .banner{
@@ -129,22 +134,27 @@ section{
 h1{
   color: white;
   padding: 40px;
+  font-family: "alba";
 }
 
 p{
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-left: 15%;
   padding-right: 15%;
   text-align: justify;
+  font-family: "alba";
 }
 
 h3{
   color: white;
+  font-family: "alba";
+
 }
 
 ol {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "alba";
   color: white;
   text-align: justify;
   margin-left: 15%;
@@ -187,6 +197,7 @@ ol {
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
+  font-family: "alba";
 }
 
 /*footer*/
@@ -203,9 +214,12 @@ footer{
 
 h6{
   color: white;
+  font-family: "alba";
 }
 
 @media (min-width: 900px) {
+
+  /*header pc*/
 
   header{
     height: 8vh;
@@ -248,6 +262,7 @@ h6{
     height: 92vh;
   }
 
+  /*main pc*/
   .container_carousel{
     padding-left: 30%;
     padding-right: 30%;
@@ -257,6 +272,9 @@ h6{
     font-size: 2rem;
   }
 
+ol{
+  font-size: 1.2rem;
+}
   .home_link{
     padding-top: 5%;
     padding-bottom: 5%;
